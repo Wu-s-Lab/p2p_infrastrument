@@ -122,7 +122,6 @@ $DOCKER_TAG
 elif [[ $HOST =~ 'MINGW' ]];then
     docker run -itd \
 -v //var/run/docker.sock:/var/run/docker.sock \
--v $WORKING_DIR:/edge \
 -e HOST=`uname` \
 -e NAME=$NAME \
 -e PHONE=$PHONE \
